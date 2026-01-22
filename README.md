@@ -1,4 +1,5 @@
-### Julio Valdez 
-## repo: 2143-OOP
-# email: jvaldezjr9@icloud.com
-## image: 
+## Julio Valdez 
+### Repo: 2143-OOP
+### Email: jvaldezjr9@icloud.com
+### Image: 
+### Avatar:
