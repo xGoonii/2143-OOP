@@ -3,5 +3,6 @@
 #### Email: jvaldezjr9@icloud.com
 #### Image:
 # <img src=WEBS0025-original.jpeg width=250>
-### Avatar:
+#### Avatar:
+![OIP](https://github.com/user-attachments/assets/10f5f180-b4b0-4b38-abf7-ecc149fb872a)
 
