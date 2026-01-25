@@ -3,7 +3,7 @@
 #### Linked-In: www.linkedin.com/in/julio-valdez-403811321
 #### Email: jvaldezjr9@icloud.com
 #### Image:
-# <img src=WEBS0025-original.jpeg width=225>
+# <img src=images/WEBS0025-original.jpeg width=225>
 #### Avatar:
 ![OIP](https://github.com/user-attachments/assets/10f5f180-b4b0-4b38-abf7-ecc149fb872a)
 
