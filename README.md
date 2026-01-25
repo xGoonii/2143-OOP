@@ -1,6 +1,6 @@
 ## Julio Valdez 
 #### Repo: 2143-OOP
-#### Linked-In: ![OIP](https://www.linkedin.com/in/julio-valdez-403811321/)
+#### Linked-In: 
 #### Email: jvaldezjr9@icloud.com
 #### Image:
 # <img src=WEBS0025-original.jpeg width=225>
