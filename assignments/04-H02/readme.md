@@ -81,15 +81,16 @@ Fill out the table:
 Then answer:
 
 1. Why is **overloading** a *compile-time convenience*?<br>
- ***Answer Array:*** <ins>Overloading is a compile-time convenience because the compiler chooses which function to call based on the argument types before the program runs.<br></ins>
+ ***Answer:*** <ins>Overloading is a compile-time convenience because the compiler chooses which function to call based on the argument types before the program runs.<br></ins>
 
 2. Why is **overriding** a *runtime contract*?<br>
- ***Answer Array:*** <ins>Overriding is a runtime contract because it selectes the correct behavior while the code is running based on the objects type. <br></ins>
+ ***Answer:*** <ins>Overriding is a runtime contract because it selectes the correct behavior while the code is running based on the objects type. <br></ins>
  
 3. Why do beginners confuse the two?<br>
+***Answer:*** <ins>Beginners probably confuse the 2 because they have similiar names, both use same function names, and they might not know the difference in compile vs run time.<br></ins>
 
-4. Why is that confusion dangerous?
-
+4. Why is that confusion dangerous?<br>
+***Answer:*** <ins>Because your program can run correctly and behave incorrectly when you overload instead of overriding.<br></ins>
 > Hint: The compiler is not your therapist. It will not guess your intent.
 
 ---
