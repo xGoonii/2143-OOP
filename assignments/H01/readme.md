@@ -237,6 +237,9 @@ if (c == Point2D(4, 6)) {
 
 std::cout << a << std::endl;
 ```
+
+---
+
 ```cpp
 #include <iostream>
 using namespace std;
