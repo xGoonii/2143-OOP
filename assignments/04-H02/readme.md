@@ -2,7 +2,7 @@
 id: 04-H02
 name: 04-H02
 title: 'Forced Study Guide'
-description: editted to make more appealing to the eye 
+description: Deleted some format to see questions and answers better  
 category: Homework
 date_assigned: 2026-02-09 11:00
 date_due: 2026-02-23 11:00
