@@ -2,7 +2,7 @@
 id: 04-H02
 name: 04-H02
 title: 'Forced Study Guide'
-description: 'Work to help you study for first exam'
+description: editted to make more appealing to the eye 
 category: Homework
 date_assigned: 2026-02-09 11:00
 date_due: 2026-02-23 11:00
@@ -13,17 +13,6 @@ resources: []
 ### *Making Your Own Types Feel Like the Language Meant Them to Exist*
 
 ### Due: 16 Feb 2026 by class time. 
-
-> If this feels long, good.  
-> If it feels unfinished, also good.  
-> If you feel like there’s “always more,” congratulations — that feeling is the curriculum.
-
-This document serves **three purposes**:
-1. Homework  
-2. Study guide  
-3. A mild personality test for how you think about software design  
-
-Read the questions carefully. Many are intentionally phrased to trip up *rote memorization*.
 
 ---
 
