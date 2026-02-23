@@ -146,11 +146,11 @@ Research + reasoning required.
 Answer:
 
 1. What is the **only** language-level difference between `struct` and `class`?<br>
-   ***Answer:*** <ins>Class is private by default.<br></ins>
+***Answer:*** <ins>Class is private by default.<br></ins>
 2. Why does C++ even allow both?<br>
-    ***Answer:*** <ins>communicates intent, struct is mainly public data, while struct is more protected date.<br></ins>
+***Answer:*** <ins>communicates intent, struct is mainly public data, while struct is more protected date.<br></ins>
 3. When does choosing `struct` communicate intent *better* than `class`?<br>
-   ***Answer:*** <ins>choosing struct is better when using simple data containers and mostly public memebrs.<br></ins>
+***Answer:*** <ins>choosing struct is better when using simple data containers and mostly public memebrs.<br></ins>
 4. Why does intent matter more than syntax in large systems?<br>
 ***Answer:*** <ins>In large codes humans read the program more than the compiler does. Syntax tells the compiler what is allowed,intent tells humans what its for.<br></ins>
 ---
@@ -166,11 +166,12 @@ Research and explain:
    - `.`  
    - `::`  
    - `sizeof`
+***Answer:*** <ins>These are fundamental operators to the language, its part of the compilers core system.<br></ins>
 
-2. Why should `operator+` **not** mutate the left-hand operand?
-3. Why is `operator<<` almost never a member function?
-
-> If your answer is “because that’s how everyone does it,” dig deeper.
+2. Why should `operator+` **not** mutate the left-hand operand?<br>
+***Answer:*** <ins>It shouldnt mutate the left hadn side because user expects + to create a new result without changing original values .<br></ins>
+3. Why is `operator<<` almost never a member function?<br>
+***Answer:*** <ins>Member operators are usually on the left hand object .<br></ins>
 
 ---
 
@@ -184,12 +185,14 @@ Point operator+(const Point& rhs) const;
 
 Answer clearly:
 
-1. Which object owns this function?
-2. What does `rhs` represent?
-3. How can this function access `rhs.x` if `x` is private?
-4. What does this tell you about **class-level vs object-level access**?
-
-> This question exists specifically to break incorrect mental models.
+1. Which object owns this function?<br>
+***Answer:*** <ins>the function belongs to the class point and is called by the left hand object .<br></ins>
+2. What does `rhs` represent?<br>
+***Answer:*** <ins>"Right hand-side" which represents the object being added to the LHS .<br></ins>
+3. How can this function access `rhs.x` if `x` is private?<br>
+***Answer:*** <ins>with "this->x" or "rhs.x" because its inside the point class .<br></ins>
+4. What does this tell you about **class-level vs object-level access**?<br>
+***Answer:*** <ins>Member functions can access private data of any object of the same class.<br></ins>
 
 ---
 
@@ -199,12 +202,15 @@ Answer clearly:
 
 Answer:
 
-1. What does the `friend` keyword actually do?
-2. Why is `operator<<` commonly declared as a friend?
-3. Why is excessive use of `friend` a red flag?
-4. Give **one legitimate use case** and **one illegitimate one**.
-
-> “Because it wouldn’t compile otherwise” is not a justification — it’s a symptom.
+1. What does the `friend` keyword actually do?<br>
+***Answer:*** <ins>The friend keyword gives a function or another class access to private and protected members of a class.<br></ins>
+2. Why is `operator<<` commonly declared as a friend?<br>
+***Answer:*** <ins>operator<< is usually declared as a friend because it must be a non-member function to allow std::ostream on the left-hand side .<br></ins>
+3. Why is excessive use of `friend` a red flag?<br>
+***Answer:*** <ins>making the private memebrs less private.<br></ins>
+4. Give **one legitimate use case** and **one illegitimate one**.<br>
+***Answer:*** <ins>A legitimate use case is overloading operator<<, where a non-member function needs controlled access to private data.
+An illegitimate use case is granting friendship to unrelated classes just to access private members, which breaks encapsulation and signals poor design.<br></ins>
 
 ---
 
@@ -329,7 +335,7 @@ Answer honestly:
 2. What design choice most contributed to that feeling?
 3. Which OOP concept currently feels overhyped?
 4. Which one feels underrated?
-5. What part of this worksheet made you uncomfortable — and why?
+5. What part of this worksheet made you uncomfortable — and why? 
 
 If nothing made you uncomfortable, you probably didn’t push hard enough.
 
