@@ -54,10 +54,13 @@ Answer **clearly and concisely**.
 1. Compare **array-based** vs **list-based** implementations of stacks and queues:
    - memory layout <br>
    ***Answer Array:*** <ins>Stored in the same space "block" like layout. <br> </ins>
-   ***Answer List:*** Stored inside nodes which connect to pointers. Data is scattered around <br>
+   ***Answer List:*** <ins>Stored inside nodes which connect to pointers. Data is scattered around <br> </ins>
    - resizing behavior
+   ***Answer Array:*** <ins>Has a capacity. When full you must allocate new array and copy elements, and delete old array. <br> </ins>
+   ***Answer List:*** <ins>Has no limit capacity. Just create new node. <br> </ins>
    - cache friendliness  
-   (Yes, cache friendliness matters. No, you may not ignore it.)
+   ***Answer Array:***<ins>Loads faster because memory is grouped together. <br> </ins>
+   ***Answer List:***<ins>Loads slower because memory is scattered. <br> </ins>
 
 2. Why is `std::vector` a natural fit for a **stack**, but awkward for a **queue**?
 
