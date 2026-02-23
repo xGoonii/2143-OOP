@@ -44,7 +44,7 @@ Answer **clearly and concisely**.
    - memory layout <br>
    ***Answer Array:*** <ins> Stored in the same space "block" like layout. <br> </ins>
    ***Answer List:*** <ins> Stored inside nodes which connect to pointers. Data is scattered around <br> <br> </ins>  
-   - resizing behavior
+   - resizing behavior <br>
    ***Answer Array:*** <ins> Has a capacity. When full you must allocate new array and copy elements, and delete old array.<br></ins>
    ***Answer List:*** <ins> Has no limit capacity. Just create new node. <br><br> </ins>
    - cache friendliness  
