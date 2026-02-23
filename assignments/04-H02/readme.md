@@ -56,8 +56,8 @@ Answer **clearly and concisely**.
    ***Answer List:*** <ins>Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
 
 4. Define the **invariant** for:
-   - a stack ***Answer Array:*** <ins>First one in first one out.<br></ins>
-   - a queue ***Answer Array:*** <ins>Last one in first one out.<br></ins>
+   - a stack ***Answer:*** <ins>First one in first one out.<br></ins>
+   - a queue ***Answer:*** <ins>Last one in first one out.<br></ins>
 
 ---
 
