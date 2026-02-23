@@ -55,7 +55,7 @@ Answer **clearly and concisely**.
    ***Answer Array:*** <ins>Array is LIFO and vector is able to push back and pop back making it perfect and fast<br></ins>
    ***Answer List:*** <ins>Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
 
-4. Define the **invariant** for:
+3. Define the **invariant** for:
    - a stack ***Answer:*** <ins>First one in first one out.<br></ins>
    - a queue ***Answer:*** <ins>Last one in first one out.<br></ins>
 
@@ -71,10 +71,10 @@ Fill out the table:
 | Feature               | Overloading | Overriding |
 | --------------------- | ----------- | ---------- |
 | Resolved at           | compile time| run time   |
-| Requires inheritance  | NO           | YES          |
-| Same function name    | YES          | YES          |
-| Same parameter list   | NO          | YES         |
-| Polymorphism involved | NO          | YES       |
+| Requires inheritance  | NO          | YES        |
+| Same function name    | YES         | YES        |
+| Same parameter list   | NO          | YES        |
+| Polymorphism involved | NO          | YES        |
 
 Then answer:
 
@@ -127,12 +127,14 @@ Answer:
 
 Research + reasoning required.
 
-1. When is the **copy constructor** invoked?
-2. When is the **assignment operator** invoked?
+1. When is the **copy constructor** invoked?<br>
+***Answer:*** <ins>When a new object is CREATED using an existing one. passing or returning by value.<br></ins>
+2. When is the **assignment operator** invoked?<br>
+***Answer:*** <ins>When an exsting object gets assigned/modifies the value of another exsting object.<br></ins>
 3. Why do both exist?
+***Answer:*** <ins>They do different things, one is used to Create other is used to Modify .<br></ins>
 4. What subtle bugs appear if you confuse them?
-
-> “They both copy stuff” earns partial credit and a sigh.
+***Answer:*** <ins>Confusing the two can give you memory leaks, and unknown behavior.<br></ins>
 
 ---
 
@@ -143,11 +145,14 @@ Research + reasoning required.
 
 Answer:
 
-1. What is the **only** language-level difference between `struct` and `class`?
-2. Why does C++ even allow both?
-3. When does choosing `struct` communicate intent *better* than `class`?
-4. Why does intent matter more than syntax in large systems?
-
+1. What is the **only** language-level difference between `struct` and `class`?<br>
+   ***Answer:*** <ins>Class is private by default.<br></ins>
+2. Why does C++ even allow both?<br>
+    ***Answer:*** <ins>communicates intent, struct is mainly public data, while struct is more protected date.<br></ins>
+3. When does choosing `struct` communicate intent *better* than `class`?<br>
+   ***Answer:*** <ins>choosing struct is better when using simple data containers and mostly public memebrs.<br></ins>
+4. Why does intent matter more than syntax in large systems?<br>
+***Answer:*** <ins>In large codes humans read the program more than the compiler does. Syntax tells the compiler what is allowed,intent tells humans what its for.<br></ins>
 ---
 
 # Part 5 — Operator Overloading  
