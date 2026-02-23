@@ -51,7 +51,7 @@ Answer **clearly and concisely**.
    ***Answer Array:***<ins>Loads faster because memory is grouped together.<br></ins>
    ***Answer List:***<ins>Loads slower because memory is scattered. <br> </ins>
 
-2. Why is `std::vector` a natural fit for a **stack**, but awkward for a **queue**?
+2. Why is `std::vector` a natural fit for a **stack**, but awkward for a **queue**?<br>
    ***Answer Array:***<ins>Array is LIFO and vector is able to push back and pop back making it perfect and fast<br></ins>
    ***Answer List:***<ins>Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
 
