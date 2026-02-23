@@ -239,7 +239,7 @@ std::cout << a << std::endl;
 ```
 
 ---
-
+**Point2D class code**
 ```cpp
 #include <iostream>
 using namespace std;
