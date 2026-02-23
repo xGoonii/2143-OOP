@@ -73,16 +73,21 @@ Fill out the table:
 | Feature               | Overloading | Overriding |
 | --------------------- | ----------- | ---------- |
 | Resolved at           | compile time| run time   |
-| Requires inheritance  | ?           | ?          |
+| Requires inheritance  | NO           | YES          |
 | Same function name    | YES          | YES          |
-| Same parameter list   | ?           | ?          |
-| Polymorphism involved | ?           | ?          |
+| Same parameter list   | NO          | YES         |
+| Polymorphism involved | NO          | YES       |
 
 Then answer:
 
-1. Why is **overloading** a *compile-time convenience*?
-2. Why is **overriding** a *runtime contract*?
-3. Why do beginners confuse the two?
+1. Why is **overloading** a *compile-time convenience*?<br>
+ ***Answer Array:*** <ins>Overloading is a compile-time convenience because the compiler chooses which function to call based on the argument types before the program runs.<br></ins>
+
+2. Why is **overriding** a *runtime contract*?<br>
+ ***Answer Array:*** <ins>Overriding is a runtime contract because it selectes the correct behavior while the code is running based on the objects type. <br></ins>
+ 
+3. Why do beginners confuse the two?<br>
+
 4. Why is that confusion dangerous?
 
 > Hint: The compiler is not your therapist. It will not guess your intent.
