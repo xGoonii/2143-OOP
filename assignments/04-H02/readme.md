@@ -42,22 +42,22 @@ Answer **clearly and concisely**.
 
 1. Compare **array-based** vs **list-based** implementations of stacks and queues:
    - memory layout <br>
-   ***Answer Array:*** <ins> Stored in the same space "block" like layout. <br> </ins>
-   ***Answer List:*** <ins> Stored inside nodes which connect to pointers. Data is scattered around <br> <br> </ins>  
+   ***Answer Array:*** <ins>Stored in the same space "block" like layout. <br> </ins>
+   ***Answer List:*** <ins>Stored inside nodes which connect to pointers. Data is scattered around <br> <br> </ins>  
    - resizing behavior <br>
-   ***Answer Array:*** <ins> Has a capacity. When full you must allocate new array and copy elements, and delete old array.<br></ins>
-   ***Answer List:*** <ins> Has no limit capacity. Just create new node. <br><br> </ins>
+   ***Answer Array:*** <ins>Has a capacity. When full you must allocate new array and copy elements, and delete old array.<br></ins>
+   ***Answer List:*** <ins>Has no limit capacity. Just create new node. <br><br> </ins>
    - cache friendliness  
-   ***Answer Array:***<ins> Loads faster because memory is grouped together.<br></ins>
-   ***Answer List:***<ins> Loads slower because memory is scattered. <br> </ins>
+   ***Answer Array:***<ins>Loads faster because memory is grouped together.<br></ins>
+   ***Answer List:***<ins>Loads slower because memory is scattered. <br> </ins>
 
 2. Why is `std::vector` a natural fit for a **stack**, but awkward for a **queue**?<br>
-   ***Answer Array:***<ins> Array is LIFO and vector is able to push back and pop back making it perfect and fast<br></ins>
-   ***Answer List:***<ins> Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
+   ***Answer Array:***<ins>Array is LIFO and vector is able to push back and pop back making it perfect and fast<br></ins>
+   ***Answer List:***<ins>Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
 
 4. Define the **invariant** for:
-   - a stack ***Answer Array:***<ins> First one in first one out.<br></ins>
-   - a queue ***Answer Array:***<ins> Last one in first one out.<br></ins>
+   - a stack ***Answer Array:***<ins>First one in first one out.<br></ins>
+   - a queue ***Answer Array:***<ins>Last one in first one out.<br></ins>
 
 > If your invariant takes more than one sentence, it’s not an invariant — it’s a confession.
 
