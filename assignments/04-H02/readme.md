@@ -52,7 +52,12 @@ This worksheet is about **building abstract data types (ADTs)** that behave like
 Answer **clearly and concisely**.
 
 1. Compare **array-based** vs **list-based** implementations of stacks and queues:
-   - memory layout
+   - memory layout <details>
+<summary><b>Click to view answer</b></summary>
+
+Polymorphism allows objects to take multiple forms.
+
+</details>
    - resizing behavior
    - cache friendliness  
    (Yes, cache friendliness matters. No, you may not ignore it.)
