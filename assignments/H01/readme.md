@@ -16,24 +16,6 @@ resources: []
 
 ---
 
-## Part 0 — A Necessary Reality Check
-
-Most people think:
-
-> **OOP = inheritance**
-
-That’s like saying:
-
-> **Math = long division**
-
-Inheritance exists.  
-It is sometimes useful.  
-It is wildly overused.
-
-This worksheet is about **building abstract data types (ADTs)** that behave like they belong in the language — not about summoning class hierarchies like Pokémon.
-
----
-
 # Part 1 — Review, But With Consequences
 
 ## 1️⃣ Stacks & Queues (ADT Reality Check)
