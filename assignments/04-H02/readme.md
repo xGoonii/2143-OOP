@@ -53,13 +53,11 @@ Answer **clearly and concisely**.
 
 2. Why is `std::vector` a natural fit for a **stack**, but awkward for a **queue**?<br>
    ***Answer Array:*** <ins>Array is LIFO and vector is able to push back and pop back making it perfect and fast<br></ins>
-   ***Answer List:*** ins>Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
+   ***Answer List:*** <ins>Queue is FIFO means you add to back and remove from front. With a vector youd have to shift everything when removing and element<br> </ins>
 
 4. Define the **invariant** for:
    - a stack ***Answer Array:*** <ins>First one in first one out.<br></ins>
    - a queue ***Answer Array:*** <ins>Last one in first one out.<br></ins>
-
-> If your invariant takes more than one sentence, it’s not an invariant — it’s a confession.
 
 ---
 
@@ -91,7 +89,6 @@ Then answer:
 
 4. Why is that confusion dangerous?<br>
 ***Answer:*** <ins>Because your program can run correctly and behave incorrectly when you overload instead of overriding.<br></ins>
-> Hint: The compiler is not your therapist. It will not guess your intent.
 
 ---
 
@@ -115,12 +112,14 @@ public:
 
 Answer:
 
-1. Why **must** this constructor use an initialization list?
-2. What happens if you try to assign `id` inside the constructor body?
-3. Write the correct constructor.
-4. Name **one other situation** where initialization lists are required (research-lite).
-
-> Saying “because the compiler told me to” is not an explanation.
+1. Why **must** this constructor use an initialization list?<br>
+***Answer:*** <ins>Because its a CONST which need to be initialized ASAP.<br></ins>
+2. What happens if you try to assign `id` inside the constructor body?<br>
+***Answer:*** <ins>The code will not compile because `id` is a constant so you cant chnage the value.<br></ins>
+3. Write the correct constructor.<br>
+***Answer:*** <ins>Widget(int id, std::string name) : id(idValue), name(nameValue){}<br></ins>
+4. Name **one other situation** where initialization lists are required (research-lite).<br>
+***Answer:*** <ins>Another situation init list is required is when you're using a reference member <br></ins>
 
 ---
 
