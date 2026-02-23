@@ -276,7 +276,7 @@ Point2D operator-(const Point2D& rhs) const
    {
    return Point2D(x-rhs.x, y-rhs.y);
    }
-Bool operator==(const Point2D& rhs) const
+bool operator==(const Point2D& rhs) const
    {
    return x == rhs.x && y == rhs.y;
    }
@@ -285,7 +285,7 @@ friend ostream& operator<<(ostream& os, const Point2D& p)
    os << "(" << p.x << "," << p.y << ")";
    return os;
    }
-}
+};
 int main(){
 
 }
