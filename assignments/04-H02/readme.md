@@ -53,7 +53,7 @@ Answer **clearly and concisely**.
 
 1. Compare **array-based** vs **list-based** implementations of stacks and queues:
    - memory layout <br>
-   ***Answer Array:*** Stored in the same space "block" like layout. <br>
+   ***Answer Array:*** <ins>Stored in the same space "block" like layout. <br> </ins>
    ***Answer List:*** Stored inside nodes which connect to pointers. Data is scattered around <br>
    - resizing behavior
    - cache friendliness  
