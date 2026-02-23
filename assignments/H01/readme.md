@@ -1,6 +1,6 @@
 ```yaml
 id: H01
-name: 04-H02
+name: H01
 title: 'Forced Study Guide'
 description: Deleted some format to see questions and answers better  
 category: Homework
