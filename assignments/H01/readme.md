@@ -259,7 +259,32 @@ std::cout << a << std::endl;
 #include <iostream>
 using namespace std;
 
+class Point2D{
+private:
+int x;
+int y;
 
+public:
+Point2D() : x(0), y(0){}
+Point2D(int x, int y) : x(x), y(y){}
+Point2D(const Point2D& other) : x(other.x),y(other.y){}
+Point2D operator+(const Point2D& rhs) const
+{
+   return Point2D(x+rhs.x, y+rhs.y);
+}
+Point2D operator-(const Point2D& rhs) const
+{
+   return Point2D(x-rhs.x, y-rhs.y);
+}
+Bool operator==(const Point2D& rhs) const
+{
+   return x == rhs.x && y == rhs.y;
+}
+friend ostream& operator<<(ostream& os, const Point2D& p)
+{
+   os << "(" << p.x << "," << p.y << ")";
+   return os;
+}
 ```
 ---
 
