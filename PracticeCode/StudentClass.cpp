@@ -10,16 +10,25 @@ class Student{
     private:
         string name;
         double gpa;
+        int age;
+        string lName;
+        string major;
+        int totalHrs;
+
     public:
         Student();
-        Student(string n, double g);
+        Student(string n, double g, string lName);
+        Student(string n, double g, string lName);
+        Student(string n, double g, string lName);
+        Student(string n, double g, string lName);
         bool isDeanList();
 };
 
 //main 
 int main(){
-    Student s1("Julio", 3.4);
-    s1.isDeanList();
+    
+
+    
 }
 //student default constructor 
 Student::Student(){};
