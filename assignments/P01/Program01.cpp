@@ -3,9 +3,13 @@
 
 #include <iostream>
 #include <string>
+#include <cstdlib>
 
 #include "stb_image.h"
 #include "stb_image_write.h"
+#include "termcolor.hpp"
+
+using namespace termcolor;
 
 // ------------------------------------------------------------
 // Program 1 (Starter):
@@ -16,11 +20,24 @@
 //   (A) termcolor for colored messages
 //   (B) a function to open the output image automatically
 // ------------------------------------------------------------
+bool open_file_default_app(const std::string& path) {
+#if defined(_WIN32)
+    std::string cmd = "start \"\" \"" + path + "\"";
+#elif defined(__APPLE__)
+    std::string cmd = "open \"" + path + "\"";
+#else
+    std::string cmd = "xdg-open \"" + path + "\"";
+#endif
+    return std::system(cmd.c_str()) == 0;
+}
 
 int main(int argc, char* argv[]) {
 
     if (argc < 3) {
-        std::cout << "Usage: ./imgtool <input_image> <output_image>\n";
+        std::cout << red << "Usage: "
+          << blue
+          << "./imgtool <input_image> <output_image>\n"
+          << reset;
         return 1;
     }
 
@@ -37,7 +54,8 @@ int main(int argc, char* argv[]) {
                                     3);
 
     if (!data) {
-        std::cerr << "Failed to load image: " << inputPath << "\n";
+        std::cerr << red << "Failed to load image: "
+          << reset << inputPath << "\n";
         return 1;
     }
 
@@ -80,9 +98,15 @@ int main(int argc, char* argv[]) {
 
     stbi_image_free(data);
 
-    std::cout << "Saved output to: " << outputPath << "\n";
+    std::cout << green << "Saved output to: "
+          << yellow
+          << outputPath << reset << "\n";
 
-    // TODO (Student): open output file automatically in default viewer
+    std::cout << "Opening output in default viewer...\n";
+
+if (!open_file_default_app(outputPath)) {
+    std::cout << "Warning: could not launch viewer automatically.\n";
+    }
 
     return 0;
 }
