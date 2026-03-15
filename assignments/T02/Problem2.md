@@ -24,18 +24,24 @@ Player::Player(){
     name = "";
     level = 1;
     score = 0;
-};
+}
 
 Player::Player(string n){
     name = n;
+    level = 1;
+    score = 0;
 }
 Player::Player(int lvl){
+    name = "";
     level = lvl;
+    score = 0;
 }
 Player::Player(string n, int lvl){
     name = n;
     level = lvl;
+    score = 0;
 }
+// setters and getters 
 void Player::setScore (int s){
     score = s;
 }
