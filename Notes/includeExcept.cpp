@@ -2,8 +2,25 @@
 #include <stdexcept> //needed lib for any of the keywords to work
 
 int main(){
+    try{
+        int age;
 
-    return 0
+        cout << "enter your age";
+        cin >> age;
+
+        if(age<0){
+            throw runtime_error("Age cannot be negative!!")
+        }
+
+        if(age>122){
+            throw runtime_error("Nice try, you are not the oldest person to ever live")
+        };
+        cout << "Your age is : " << age << endl;
+    }
+    catch(exception& e){
+        cout << "Error: " << e.what() << endl;
+    }
+return 0
 }
 
 /*The reason for this is telling your compiler to do something else INSTEAD of crashing when an error occurs 
