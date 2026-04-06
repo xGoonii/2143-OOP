@@ -12,4 +12,4 @@
 ## Table of context 
 |  (order)  | Folder Link | Note Description |
 | :-: | ----------- | ------------------------ |
-|  1  | [H01](./H01/readme.md) | example 1 |
+|  1  | [STDexcept](./includeExcept.cpp) | using and explaining except |
